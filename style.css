@@ -1,0 +1,736 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        /* background-color: #c4dce8; */
+        background: linear-gradient(to bottom,#c4dce8, #78c7ee); 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .companyLogo {
+        margin-left: 1.5em;
+        margin-top: 2em;
+        width: 120px; 
+    }
+    
+    .companyName {
+        font-family: 'Montserrat', cursive;   
+        color: darkblue;
+        font-weight: bold;
+        margin-left: 1em;
+        margin-top: .7em;
+    }
+    
+    nav {
+        margin-top: -5.8em;
+        text-align: right;
+        float: right;
+        width: 60%;
+    }
+    
+    nav ul li {
+        background-color: darkblue;
+        padding: .8em;
+        padding-right: 2em;
+        padding-left: 2em;
+        margin: .5em;
+        border-radius: 1em;
+        text-align: center;
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    nav ul li:hover {
+        background-color:rgb(12, 77, 152);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .intro img {
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      
+    /* .intro .intro1 {
+        position: absolute;
+        top: 300px;
+        background: linear-gradient(to top, #c4dce8, #78c7ee, #c4dce8);
+        margin-right: 40em;
+        margin-top: -1.9em;
+        padding: 4.7em 9em 5em 1.5em;
+        clip-path: polygon(0% 0, 100% 0, 70% 100%, 0% 100%);
+        text-align: center;
+        color: darkblue;
+        font-size: larger;
+        font-family: 'Rockwell';   
+      } */
+
+    .intro .intro1 {
+        position: absolute;
+        top: 265px;
+        right: 760px;
+        bottom: 16px;
+        background: linear-gradient(to top, #c4dce8, #78c7ee, #c4dce8);
+        padding: 5.7em 9em 4em 1.5em;
+        clip-path: polygon(0% 0, 100% 0, 70% 100%, 0% 100%);
+        text-align: center;
+        color: darkblue;
+        font-size: larger;
+        font-family: 'Rockwell';   
+      }
+    
+    .intro {
+        width: 100%;
+        height: 500px; 
+        overflow: hidden; 
+        margin-top: 4em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    
+    .intro3-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1170px;
+        margin:auto;
+      }
+    
+    .intro3-container h3{
+        text-align: center;
+      }
+    .intro3-container div.curved{
+        color:darkblue;;
+        position:relative;
+        border-radius: 17px;
+        font-size: larger;
+        width:30%;
+        margin:0 1%;
+        background: linear-gradient(-150deg, transparent 1.5em,  rgb(242, 244, 223) 0) no-repeat;
+        margin-top: 5.5em;
+      }
+
+    .intro3-container div::after{
+        content:'';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        width:1.35em;
+        height:3.2em;
+        transform: translate(-0.8em, -0.73em) rotate(-36.7deg);
+        background: linear-gradient(to left bottom, transparent 50%, #7da9b3 0, #d2f1fb 27px, #025364);
+        box-shadow: 0 6px 4px -4px #112429;
+      }
+
+    .intro3-container div.curved.objectives{
+        padding:22px;
+        padding-left:3.5em;
+        padding-right:4em;
+        margin-left: -3em;
+        font-family: 'Rockwell'; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+    .intro3-container div.curved.objectives li{
+        margin-bottom: 15px;
+        margin-left: -15px;
+        list-style-type: square;
+    }
+
+    .intro3-container div.curved.contact{
+        padding:15px;
+        padding-left:5em;
+        padding-right:3em;
+        margin-right: -3em;
+        font-family: 'Rockwell'; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+
+    .footer {
+        background-color: darkblue;
+        color: #e7eef1;
+        width: 100%;
+        margin-top: 6em;
+        padding: 35px;
+        text-align: center;
+        font-family: 'Rockwell'; 
+    }
+  
+    /* About us page */
+    .styled-line {
+        border: 5px solid darkblue; 
+        margin-top: 2.5em;
+    }
+
+    .aboutus{
+        margin-top: 2em;
+        margin-bottom: 5em;
+
+    }
+    #CEOimg {
+        display: block;
+        margin-left: 12em;
+        width: 20%;
+        float: left;
+        border-radius: 1em;
+        border: 5px solid darkblue;
+    }
+
+    .aboutusPara {
+        text-align: justify;
+        width: 50%;
+        margin-left: 35em;
+        font-family: 'Rockwell'; 
+        margin-top: 5em;
+        color: darkblue;
+        padding-top: 1.5em;
+    }
+
+    .vision {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 6em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 60%;
+        margin-left: 3em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .mission {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 4em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 60%;
+        margin-left: 32em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .corevalues {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 4em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 50%;
+        margin-left: 3em;
+        padding-right: 25em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .corevalues li {
+        text-align: left;
+        margin-bottom: 15px;
+        list-style-type: square;
+    }
+
+
+    #coreValuesImg {
+        margin-right: 19em;
+        margin-top: -15em;
+        width: 20%;
+        float: right;
+        border-radius: 1em;
+        border: 5px solid darkblue;
+    }
+
+
+    /* Services */
+
+    /* .services li {
+        list-style-type: none;
+        margin-right: 29em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: justify;
+        background: rgb(242, 244, 223)
+
+    }
+
+    .container {
+        height: 800px;
+        position: relative;
+    } */
+    
+    .slider-container {
+        /* background: linear-gradient(149deg, rgb(247, 0, 255) 0%, rgb(255, 145, 0) 100%); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100%; */
+    }
+    
+    .slider {
+        /* width: 100%; */
+        max-width: 900px;
+        height: 400px;
+        margin: 50px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+    }
+    .slides {
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+    .slide:nth-of-type(even) {
+        background-color: rgb(242, 244, 223);
+    }
+    
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 400px;
+        margin-right: 0px;
+        box-sizing: border-box;
+        background: rgb(242, 244, 223);
+        transform-origin: center center;
+        transform: scale(1);
+        scroll-snap-align: center;
+    }
+    
+    .slide__text {
+        font-size: 20px;
+        font-family: 'Rockwell';
+        padding: 5em;
+    }
+    .slide a {
+        background: none;
+        border: none;
+    }
+    
+    a.slide__prev,
+    .slider::before {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        left: 5%;
+    }
+    
+    a.slide__next,
+    .slider::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        right: 5%;
+    }
+
+    .slider::before,
+    .slider::after,
+    .slide__prev,
+    .slide__next {
+        position: absolute;
+        top: 48%;
+        width: 35px;
+        height: 35px;
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    .slider::before,
+    .slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+    }
+    
+}
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*   
+* {
+    box-sizing: border-box;
+  }
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: linear-gradient(to bottom,#c4dce8, #78c7ee); 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .companyLogo {
+        margin-left: 1.5em;
+        margin-top: 2em;
+        width: 120px; 
+    }
+    
+    .companyName {
+        font-family: 'Montserrat', cursive;   
+        color: darkblue;
+        font-weight: bold;
+        margin-left: 1em;
+        margin-top: .7em;
+    }
+    
+    nav {
+        margin-top: -5.8em;
+        text-align: right;
+        float: right;
+        width: 60%;
+    }
+    
+    nav ul li {
+        background-color: darkblue;
+        padding: .8em;
+        padding-right: 2em;
+        padding-left: 2em;
+        margin: .5em;
+        border-radius: 1em;
+        text-align: center;
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    nav ul li:hover {
+        background-color:rgb(12, 77, 152);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .intro img {
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      
+ 
+
+    .intro .intro1 {
+        position: absolute;
+        top: 265px;
+        right: 760px;
+        bottom: 16px;
+        background: linear-gradient(to top, #c4dce8, #78c7ee, #c4dce8);
+        padding: 5.7em 9em 4em 1.5em;
+        clip-path: polygon(0% 0, 100% 0, 70% 100%, 0% 100%);
+        text-align: center;
+        color: darkblue;
+        font-size: larger;
+        font-family: 'Rockwell';   
+      }
+    
+    .intro {
+        width: 100%;
+        height: 500px; 
+        overflow: hidden; 
+        margin-top: 4em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    
+    .intro3-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1170px;
+        margin:auto;
+      }
+    
+    .intro3-container h3{
+        text-align: center;
+      }
+    .intro3-container div.curved{
+        color:darkblue;;
+        position:relative;
+        border-radius: 17px;
+        font-size: larger;
+        width:30%;
+        margin:0 1%;
+        background: linear-gradient(-150deg, transparent 1.5em,  rgb(242, 244, 223) 0) no-repeat;
+        margin-top: 5.5em;
+      }
+
+    .intro3-container div::after{
+        content:'';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        width:1.35em;
+        height:3.2em;
+        transform: translate(-0.8em, -0.73em) rotate(-36.7deg);
+        background: linear-gradient(to left bottom, transparent 50%, #7da9b3 0, #d2f1fb 27px, #025364);
+        box-shadow: 0 6px 4px -4px #112429;
+      }
+
+    .intro3-container div.curved.objectives{
+        padding:22px;
+        padding-left:3.5em;
+        padding-right:4em;
+        margin-left: -3em;
+        font-family: 'Rockwell'; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+    .intro3-container div.curved.objectives li{
+        margin-bottom: 15px;
+        margin-left: -15px;
+        list-style-type: square;
+    }
+
+    .intro3-container div.curved.contact{
+        padding:15px;
+        padding-left:5em;
+        padding-right:3em;
+        margin-right: -3em;
+        font-family: 'Rockwell'; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+
+    .footer {
+        background-color: darkblue;
+        color: #e7eef1;
+        width: 100%;
+        margin-top: 6em;
+        padding: 35px;
+        text-align: center;
+        font-family: 'Rockwell'; 
+    }
+  
+    .styled-line {
+        border: 5px solid darkblue; 
+        margin-top: 2.5em;
+    }
+
+    .aboutus{
+        margin-top: 2em;
+        margin-bottom: 5em;
+
+    }
+    #CEOimg {
+        display: block;
+        margin-left: 12em;
+        width: 20%;
+        float: left;
+        border-radius: 1em;
+        border: 5px solid darkblue;
+    }
+
+    .aboutusPara {
+        text-align: justify;
+        width: 50%;
+        margin-left: 35em;
+        font-family: 'Rockwell'; 
+        margin-top: 5em;
+        color: darkblue;
+        padding-top: 1.5em;
+    }
+
+    .vision {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 6em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 60%;
+        margin-left: 3em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .mission {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 4em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 60%;
+        margin-left: 32em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .corevalues {
+        background: rgb(242, 244, 223);
+        border-radius: 17px;
+        padding: 10px;
+        margin-top: 4em;
+        font-family: 'Rockwell'; 
+        color: darkblue;
+        text-align: center;
+        width: 50%;
+        margin-left: 3em;
+        padding-right: 25em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .corevalues li {
+        text-align: left;
+        margin-bottom: 15px;
+        list-style-type: square;
+    }
+
+
+    #coreValuesImg {
+        margin-right: 19em;
+        margin-top: -15em;
+        width: 20%;
+        float: right;
+        border-radius: 1em;
+        border: 5px solid darkblue;
+    }
+
+    .slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .slider {
+        max-width: 900px;
+        height: 400px;
+        margin: 50px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+    }
+    .slides {
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+    .slide:nth-of-type(even) {
+        background-color: rgb(242, 244, 223);
+    }
+    
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 400px;
+        margin-right: 0px;
+        box-sizing: border-box;
+        background: rgb(242, 244, 223);
+        transform-origin: center center;
+        transform: scale(1);
+        scroll-snap-align: center;
+    }
+    
+    .slide__text {
+        font-size: 20px;
+        font-family: 'Rockwell';
+        padding: 5em;
+    }
+    .slide a {
+        background: none;
+        border: none;
+    }
+    
+    a.slide__prev,
+    .slider::before {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        left: 5%;
+    }
+    
+    a.slide__next,
+    .slider::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        right: 5%;
+    }
+
+    .slider::before,
+    .slider::after,
+    .slide__prev,
+    .slide__next {
+        position: absolute;
+        top: 48%;
+        width: 35px;
+        height: 35px;
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    .slider::before,
+    .slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+    }
+    
+}
+    
+     
+
+
+  
+  
+  
+  
+   */
+
