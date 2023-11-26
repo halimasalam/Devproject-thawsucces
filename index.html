@@ -10,17 +10,14 @@
     </head>
     
     <body>
-        <header>
-            <img class="companyLogo" src="images/logo.jpeg" alt="company logo">
+        <header id="index-header">
+            <a href="index.html">
+                <img class="companyLogo" src="images/logo.jpeg" alt="company logo">
+            </a>
             <h1 class="companyName"><b>THAW SUCCESS GLOBAL LIMITED</b></h1>
 
             <nav>
                 <ul>
-                    <!-- <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li> -->
-
                     <a href="index.html">Home</a>
                     <a href="About.html">About Us</a>
                     <a href="services.html">Services</a>
@@ -29,51 +26,60 @@
             </nav>
         </header>
 
-        <hr class="styled-line-index-top">
+        
 
         <main>
-            <section class="introall">
-                <div class="intro">
-                    <div class="intro2img-container">
-                        <img id="intro2img" src="images/backgroundimage.jpeg" alt="Services images">
+            <section class="introduction1">
+                <hr class="styled-line top">
+                <div class="intro1-container">
+                    <div class="intro1img">
+                        <div class="intro1">
+                            <h2> Welcome to Our Agro-Commodities Export Company</h2>
+                            <p id="paraone"> Your source for seamless exportation of agro-commodities.</p>
+                            <p id="paratwo"> We specialize in all aspects of exportation of agro-commodities (Cashew nuts, sesame seeds, cocoa, Ginger, etc) and other essential commodities from Nigeria to any part of the world.</p>
+                            <!-- <img id="intro2img" src="images/backgroundimage.jpeg" alt="Services images"> -->
+                        </div>
                     </div>
-                    <div class="intro1">
-                        <h2> Welcome to Our Agro-Commodities Export Company</h2>
-                        <p> Your source for seamless exportation of agro-commodities.</p>
-                        <p> We specialize in all aspects of exportation of agro-commodities (Cashew nuts, sesame seeds, cocoa, Ginger, etc) and other essential commodities from Nigeria to any part of the world.</p>
-                    </div>
-                </div>          
+                </div>  
+                <hr class="styled-line bottom">        
 
                 <script>
-                    const images = ["images/backgroundimage.jpeg", "images/exportagroimg.webp", "images/exportimage1.jpeg", "images/exportimage2.jpeg", "images/exportagroimg1.webp"];
+                    const images = [
+                        'images/backgroundimage.jpeg',
+                        'images/exportagroimg.webp',
+                        'images/exportimage1.jpeg',
+                        'images/exportimage2.jpeg',
+                        'images/exportagroimg1.webp'
+                    ];
+
                     let currentImage = 0;
-                    const imageElements = document.getElementById("intro2img");
+                    const introContainer = document.querySelector('.intro1-container');
 
-                    function displayImage() {
-                    imageElements.src = images[currentImage];
-                    currentImage = (currentImage + 1) % images.length;
+                    function setBackgroundImage() {
+                        introContainer.style.backgroundImage = `url(${images[currentImage]})`;
+                        currentImage = (currentImage + 1) % images.length;
                     }
-                    displayImage();
 
-                    setInterval(displayImage, 3000);
+                    setInterval(setBackgroundImage, 3000);
+                    setBackgroundImage(); // Call it once to set the initial background image
                 </script>
             </section>
 
-            <hr class="styled-line-index-bottom">
+           
 
-            <section class="intro3">
-                <div class="intro3-container">
-                    <div class="curved objectives">
+            <section class="introduction2">
+                <div class="intro2-container">
+                    <div class="intro2 objectives">
                         <h2> Our objectives</h2>
-                        <ul class="obj-list">
-                            <li>To provide clients satisfaction</li>
-                            <li>To develop a quality assurance system that helps us provide impeccable service offerings to all our clients.</li>
-                            <li>To ensure that our clients get maximum value for working with us.</li>
-                            <li>To develop a growing list of satisfied and returning clients from across the world.</li>
-                        </ul>
+                        <!-- <ul class="obj-list"> -->
+                            <p>To provide clients satisfaction<p></p>
+                            <p>To develop a quality assurance system that helps us provide impeccable service offerings to all our clients.<p>
+                            <p>To ensure that our clients get maximum value for working with us.<p>
+                            <p>To develop a growing list of satisfied and returning clients from across the world.<p>
+                        <!-- </ul> -->
                     </div>
 
-                    <div class="curved contact">
+                    <div class="intro2 contact">
                         <h2 id="contact">Contact Us</h2>
                         <p>If you have any inquiries or need more information, feel free to get in touch with us.</p>
                         <p><i class="fa-solid fa-phone"></i> Phone: +2347063382283</p>
@@ -99,28 +105,6 @@
     </body>
 </html>
 <!-- 
-        <section class="obj">
-            <div class="objectives">
-                <h3> OUR OBJECTIVES</h3>
-                <ul class="obj-list">
-                    <li>To provide clients satisfaction</li>
-                    <li>To develop a quality assurance system that helps us provide impeccable service offerings to all our clients.</li>
-                    <li>To ensure that our clients get maximum value for working with us.</li>
-                    <li>To develop a growing list of satisfied and returning clients from across the world.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="obj">
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <p>If you have any inquiries or need more information, feel free to get in touch with us.</p>
-                <p><i class="fa-solid fa-phone"></i> Phone: (123) 456-7890</p>
-                <p><i class="fa-solid fa-at"></i> Email: example@email.com</p>
-                <p><i class="fa-brands fa-facebook"></i> facebook page</p>
-                <p><i class="fa-brands fa-instagram"></i> instagram</p>
-                <p><i class="fa-brands fa-twitter"></i> twitter</p>
-            </div>
-        </section> -->
+   </section> -->
         
 
