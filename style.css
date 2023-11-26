@@ -355,6 +355,7 @@ header nav ul a:hover {
     }
 
     #CEOimg {
+        width: 350px;
         margin: 4em 4em 4em 4em; 
     }
 
@@ -376,8 +377,8 @@ header nav ul a:hover {
     #CEOimg {
         margin: 1em 1em 1em 1em; 
         float: left;
-        width: 100px;
-        height: 150px;
+        width: 170px;
+        height: 200px;
     }
 
     .aboutusPara {
